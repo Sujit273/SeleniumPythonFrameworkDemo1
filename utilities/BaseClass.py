@@ -6,4 +6,5 @@ class BaseClass:
     pass
 
 
-
+class demo:
+    pass
