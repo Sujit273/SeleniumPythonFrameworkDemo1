@@ -8,4 +8,3 @@ class BaseClass:
 
 class demo:
     pass
-65765676
