@@ -1,14 +1,7 @@
-import pytest
-from selenium import webdriver
-
-# chrome driver
-from selenium.webdriver.chrome.service import Service
-# -- Chrome
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from PageObject.Checkoutpage import CheckOutPage
 from PageObject.HomePage import HomePage
 from utilities.BaseClass import BaseClass
 
@@ -26,6 +19,8 @@ class Testone(BaseClass):
 
         self.driver.find_element(By.CSS_SELECTOR, "a[class*='btn-primary']").click()
         confirmPage = checkoutpage.checkOutItems()
+
+        ##  Below code are not added to POM
         self.driver.find_element(By.ID, "country").send_keys("ind")
         wait = WebDriverWait(self.driver, 10)
         wait.until(EC.presence_of_element_located((By.LINK_TEXT, "India")))
