@@ -17,7 +17,7 @@ def setup(request):
         driver = webdriver.Chrome(service=service_obj)
 
     elif browser_name == "firefox":
-        service_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
+        service_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")   #Need to provide fixefox browser path
         driver = webdriver.Firefox(service=service_obj)
 
     elif browser_name == "IE":

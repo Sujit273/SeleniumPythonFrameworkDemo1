@@ -25,3 +25,7 @@ class CheckOutPage:
         confirmPage = ConfirmPage(self.driver)
         return confirmPage
 
+    def pullrequesttest(self):
+        pass
+
+
